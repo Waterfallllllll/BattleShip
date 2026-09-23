@@ -3,12 +3,13 @@ body {
     
     #board {
         position: relative;
-        top: 30px;
-        min-height: 863px;
-        background: url("../img/board.jpg") no-repeat center;
+        width: 1024px;
+        height: 863px;
+        margin: 30px auto 0;
+        background: url("../img/board.jpg") no-repeat left top;
     }
 
-    #messageArea {
+    .messageArea {
         position: absolute;
         top: 0px;
         left: 0px;
@@ -16,23 +17,35 @@ body {
         color: rgb(83, 175, 19);
     }
 
+    .link {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 30px;
+        color: rgb(83, 175, 19);
+        text-decoration: none;
+    }
+
     table {
         position: absolute;
-        left: 675px;
-        top: 98px;
-        border-spacing: 0px;
+        left: 172px;
+        top: 97px;
+        border-spacing: 0;
+        border-collapse: collapse;
     }
     
     td {
-        width: 94px;
-        height: 94px;
+        width: 96px;
+        height: 96px;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     form {
         position: absolute;
         bottom: 0px;
         right: 0px;
-        padding: 15px;
+        padding: 9px;
         background-color: rgb(83, 175, 19);
 
         input {
